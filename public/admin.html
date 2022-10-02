@@ -8,10 +8,34 @@
 </head>
 
 <body>
-   <div id="root">
+   <div class="container" id="root">
+        <h1>ADMIN PORTAL</h1>
+        <h2>List of Books</h2>
+        <div id="book-list"></div>
+       <h2>Add Books</h2>
+
+       <label class="form-label" for="add-title">Title</label>
+       <input class="form-control mb-3" id="add-title" type="text" name="title">
+
+       <label class="form-label" for="add-year">year</label>
+       <input class="form-control mb-3" id="add-year" type="text" name="year">
        
+       <label class="form-label" for="add-description">description</label>
+       <input class="form-control mb-3" id="add-description" type="text" name="description">
+
+       <label class="form-label" for="add-quantity">quantity</label>
+       <input class="form-control mb-3" id="add-quantity" type="number" name="quantity">
+
+       <label class="form-label" for="add-imageURL">imageURL</label>
+       <input class="form-control mb-3" id="add-imageURL" type="text" name="imageURL">
+
+       <button id="add-book">Add Book</button>
+
+       <h2 class="mt-4">Delete A Book</h2>
+       <input class="form-control mb-3" id="delete-id" type="number">
+       <button id="delete-book">Delete</button>
+
    </div>
-    <!-- Our JavaScript Code  -->
     <script src="admin.js"></script>
 </body>
 
